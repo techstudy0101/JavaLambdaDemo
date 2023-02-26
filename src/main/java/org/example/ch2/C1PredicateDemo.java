@@ -17,5 +17,7 @@ public class C1PredicateDemo {
             }
         };
         System.out.println(predicate.test("TechStudy"));
+        System.out.println(predicate.test(""));
+        System.out.println(predicate.test(null));
     }
 }
