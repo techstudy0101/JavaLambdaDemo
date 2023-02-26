@@ -45,17 +45,6 @@ public class LambdaDemo {
         runnable.run();
     }
 
-    public static void conversionFromAnonymousClassToLambda(){
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Anonymous Class: Runnable Executed");
-            }
-        };
-        runnable.run();
-    }
-
-
     public static void lambda(){
         Runnable runnable = () -> System.out.println("Lambda: Runnable Executed");
         runnable.run();
@@ -66,24 +55,12 @@ public class LambdaDemo {
         runnableWithCurly.run();
     }
 
-
-    public static void conversionFromAnonymousParameterClassToLambda() throws Exception {
-        Callable callable = new Callable<Integer>() {
-            @Override
-            public Integer call() {
-                System.out.println("Anonymous Class: Runnable Executed");
-                return 5;
-            }
-        };
-        callable.call();
-    }
-
-
     public static void lambdaWithParameter() throws Exception {
         Callable<Integer> callable = () -> 5;
         callable.call();
 
         Callable<Integer> callableWithCurly = () -> {
+            System.out.println("callableWithCurly");
             return 5;
         };
         callableWithCurly.call();
