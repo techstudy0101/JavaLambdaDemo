@@ -2,7 +2,7 @@ package org.example.ch5;
 
 import java.util.function.Function;
 
-public class C1FunctionExample {
+public class C2FunctionExample {
 
     public static void main(String[] args) {
         functionExample();
