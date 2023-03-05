@@ -4,23 +4,22 @@ import java.util.concurrent.Callable;
 
 public class LambdaDemo {
 
-    // Why Lambda?
-    // Better code readability
-    // We need to define only behaviour
-    // Functional coding style
-
     // 1. Anonymous Function in Java
     // 2. Replacement of Anonymous class
     // 3. Available from java SE 8.
     // 4. Only Function interface can be converted into Lambda Function
     // 5. Syntax: () -> {};
 
+    // Why Lambda?
+    // Better code readability
+    // We need to define only behaviour
+    // Functional coding style
 
     public static void main(String[] args) throws Exception {
         implementingInterface();
         anonymousClass();
         lambda();
-        lambdaWithParameter();
+        lambdaWithReturn();
     }
 
     static class MyExecutor implements Runnable {
@@ -55,7 +54,7 @@ public class LambdaDemo {
         runnableWithCurly.run();
     }
 
-    public static void lambdaWithParameter() throws Exception {
+    public static void lambdaWithReturn() throws Exception {
         Callable<Integer> callable = () -> 5;
         callable.call();
 

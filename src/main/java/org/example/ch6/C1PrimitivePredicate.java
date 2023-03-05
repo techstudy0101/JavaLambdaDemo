@@ -5,6 +5,9 @@ import java.util.function.Predicate;
 
 public class C1PrimitivePredicate {
 
+    // AutoBoxing -> Converting primitive (int, long, double, boolean) to Wrapper class (Integer, Long, Double, Boolean)
+    // Unboxing -> Converting Wrapper class to primitive data type.
+
     public static void main(String[] args) {
 
         for (int i = 0; i < 100; i++) {
